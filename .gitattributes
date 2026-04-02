@@ -1,0 +1,60 @@
+# Set default behavior: auto-detect text/binary
+* text=auto eol=lf
+
+# Dart / Flutter
+*.dart      text eol=lf
+*.yaml      text eol=lf
+*.yml       text eol=lf
+*.json      text eol=lf
+*.md        text eol=lf
+*.txt       text eol=lf
+*.arb       text eol=lf
+
+# CMake / build scripts
+CMakeLists.txt  text eol=lf
+*.cmake          text eol=lf
+*.sh             text eol=lf
+*.ps1            text eol=crlf
+
+# C / C++ source
+*.c         text eol=lf
+*.cc        text eol=lf
+*.cpp       text eol=lf
+*.cxx       text eol=lf
+*.h         text eol=lf
+*.hh        text eol=lf
+*.hpp       text eol=lf
+*.hxx       text eol=lf
+
+# Windows resource / manifest files (CRLF expected by MSVC)
+*.rc        text eol=crlf
+*.rc2       text eol=crlf
+*.manifest  text eol=crlf
+*.def       text eol=crlf
+
+# Binary assets — never mess with line endings
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.ico       binary
+*.bmp       binary
+*.tiff      binary
+*.ttf       binary
+*.otf       binary
+*.woff      binary
+*.woff2     binary
+
+# Archives / executables
+*.zip       binary
+*.tar       binary
+*.gz        binary
+*.bz2       binary
+*.7z        binary
+*.exe       binary
+*.dll       binary
+*.so        binary
+*.dylib     binary
+*.a         binary
+*.lib       binary
+*.pdb       binary

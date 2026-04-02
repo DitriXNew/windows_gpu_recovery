@@ -1,0 +1,72 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code — uncomment if you don't want to share launch/task configs
+#.vscode/
+
+# Flutter / Dart / Pub
+**/doc/api/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+.packages
+pubspec.lock
+
+# Build artifacts (root plugin)
+/build/
+/coverage/
+
+# Example apps — each has its own .gitignore, but exclude common build output
+example_with_recovery/build/
+example_with_recovery/.dart_tool/
+example_with_recovery/.flutter-plugins
+example_with_recovery/.flutter-plugins-dependencies
+example_with_recovery/pubspec.lock
+
+example_without_recovery/build/
+example_without_recovery/.dart_tool/
+example_without_recovery/.flutter-plugins
+example_without_recovery/.flutter-plugins-dependencies
+example_without_recovery/pubspec.lock
+
+# Windows native build artifacts
+windows/x64/
+*.user
+*.ncb
+*.sdf
+*.suo
+*.VC.db
+*.VC.opendb
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.obj
+*.res
+ipch/
+x64/
+Debug/
+Release/
+GeneratedFiles/
+
+# Symbolication / obfuscation
+app.*.symbols
+app.*.map.json
