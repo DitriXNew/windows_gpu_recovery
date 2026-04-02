@@ -11,7 +11,7 @@ Flutter Windows plugin that recovers from `EGL_CONTEXT_LOST` / `DXGI_ERROR_DEVIC
 
 ## Demo
 
-<video src="https://github.com/DitriXNew/windows_gpu_recovery/releases/download/v0.1.0/Demo.mp4" controls width="800"></video>
+<video src="https://github.com/DitriXNew/windows_gpu_recovery/releases/download/v0.1.0/Demo.mp4" controls autoplay muted loop width="800"></video>
 
 [Download Demo.mp4](https://github.com/DitriXNew/windows_gpu_recovery/releases/download/v0.1.0/Demo.mp4) · [Download example builds (zip)](https://github.com/DitriXNew/windows_gpu_recovery/releases/download/v0.1.0/Demo.zip)
 
