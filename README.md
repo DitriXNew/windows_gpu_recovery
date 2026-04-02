@@ -9,6 +9,12 @@ Flutter Windows plugin that recovers from `EGL_CONTEXT_LOST` / `DXGI_ERROR_DEVIC
 
 > **The recovery does NOT work when a debugger is attached** (VS Code `flutter run`, `F5`, or any external debugger). This is a Win32 debugging model limitation — the debugger intercepts exceptions before the plugin can handle them. **Run the compiled exe directly for testing and production.**
 
+## Demo
+
+<video src="https://github.com/DitriXNew/windows_gpu_recovery/releases/download/v0.1.0/Demo.mp4" controls width="800"></video>
+
+[Download Demo.mp4](https://github.com/DitriXNew/windows_gpu_recovery/releases/download/v0.1.0/Demo.mp4) · [Download example builds (zip)](https://github.com/DitriXNew/windows_gpu_recovery/releases/download/v0.1.0/Demo.zip)
+
 ## What it does
 
 After GPU device loss, a Flutter Windows app freezes forever — rendering stops, the window goes white, Windows marks it "Not Responding". CPU logic (Dart isolate, timers, method channels) continues working, but no frames are drawn.

@@ -13,8 +13,8 @@ topics:
   - recovery
   - plugin
 
-repository: https://github.com/user/windows_gpu_recovery
-issue_tracker: https://github.com/user/windows_gpu_recovery/issues
+repository: https://github.com/DitriXNew/windows_gpu_recovery
+issue_tracker: https://github.com/DitriXNew/windows_gpu_recovery/issues
 
 environment:
   sdk: '>=3.8.0 <4.0.0'
