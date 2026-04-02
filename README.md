@@ -1,5 +1,10 @@
 # windows_gpu_recovery
 
+[![pub.dev](https://img.shields.io/pub/v/windows_gpu_recovery.svg)](https://pub.dev/packages/windows_gpu_recovery)
+[![pub points](https://img.shields.io/pub/points/windows_gpu_recovery)](https://pub.dev/packages/windows_gpu_recovery/score)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![platform: Windows](https://img.shields.io/badge/platform-Windows-0078D4?logo=windows)](https://pub.dev/packages/windows_gpu_recovery)
+
 Flutter Windows plugin that recovers from `EGL_CONTEXT_LOST` / `DXGI_ERROR_DEVICE_REMOVED` after system sleep, Hyper-V save/restore, TDR timeout, or GPU driver reset. Without this plugin, the app freezes permanently with a white screen.
 
 > **The recovery does NOT work when a debugger is attached** (VS Code `flutter run`, `F5`, or any external debugger). This is a Win32 debugging model limitation — the debugger intercepts exceptions before the plugin can handle them. **Run the compiled exe directly for testing and production.**
@@ -102,7 +107,7 @@ Other methods:
 
 ### A/B test procedure
 
-1. `flutter build windows --release` in both `example_with_recovery` and `example_without_recovery`
+1. `flutter build windows --release` in both `example` and `example_without_recovery`
 2. Launch both exe files directly (not via VS Code)
 3. Click the counter several times
 4. Run `dxcap -forcetdr` as Administrator
@@ -112,7 +117,7 @@ Other methods:
 
 ### Logs
 
-The `example_with_recovery` writes to `gpu_recovery.log` next to the exe:
+The `example` app writes to `gpu_recovery.log` next to the exe:
 ```
 [GPU_RECOVERY] Sentinel D3D device created
 [GPU_RECOVERY] Plugin initialized
@@ -149,7 +154,7 @@ windows_gpu_recovery/
     windows_gpu_recovery_plugin.h
     include/.../gpu_recovery_message.h    — WM_GPU_RECOVERY constant
     CMakeLists.txt                        — links dxgi, d3d11
-  example_with_recovery/                  — counter app + plugin + state restore
+  example/                               — counter app + plugin + state restore
   example_without_recovery/               — counter app, no plugin (freezes)
 ```
 

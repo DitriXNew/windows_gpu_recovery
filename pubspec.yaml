@@ -5,7 +5,13 @@ description: >
   Uses a sentinel D3D11 device for detection and a Vectored Exception Handler
   to safely destroy the dead engine and create a fresh one.
 version: 0.1.0
-publish_to: none
+
+topics:
+  - windows
+  - gpu
+  - d3d11
+  - recovery
+  - plugin
 
 repository: https://github.com/user/windows_gpu_recovery
 issue_tracker: https://github.com/user/windows_gpu_recovery/issues
